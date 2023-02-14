@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/letter-a.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ashraf Editor</title>
+  </head>
+  <body class="bg-lime-200">
+    <main>
+      <section class="py-12">
+        <div
+          class="editor-div bg-gradient-to-r from-red-400 to-purple-600 flex justify-center py-8 flex-col px-16 w-11/12 mx-auto rounded-lg"
+        >
+          <h1
+            class="text-6xl text-center py-10 bg-gradient-to-l from-sky-500 to-purple-600 text-transparent bg-clip-text"
+          >
+            Welcome!! To Ashraf Editor
+          </h1>
+          <div class="bg-emerald-200 flex gap-3 justify-around py-4">
+            <div class="flex gap-4">
+              <h2 id="bold" class="text-2xl font-bold">B</h2>
+              <h2 id="italic" class="text-2xl font-bold italic">I</h2>
+              <h2 id="underline" class="text-2xl font-bold underline">U</h2>
+            </div>
+
+            <div class="align-ment flex gap-4">
+              <img
+                id="left-align"
+                class="w-8"
+                src="./assets/left-align.png"
+                alt=""
+                srcset=""
+              />
+              <img
+                id="center-align"
+                class="w-8"
+                src="./assets/center-align.png"
+                alt=""
+                srcset=""
+              />
+              <img
+                id="right-align"
+                class="w-8"
+                src="./assets/right-align.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="flex gap-4">
+              <div class="flex gap-2">
+                <input
+                  class="w-14 pl-1"
+                  type="number"
+                  name=""
+                  id="input-number"
+                  value="16"
+                />
+                <img src="./assets/lettering.png" alt="" class="w-8" />
+              </div>
+              <input
+                class="border-double border-8 border-l-blue-800 rounded-md"
+                type="color"
+                name=""
+                id="input-color"
+                value="#41bea5"
+              />
+            </div>
+          </div>
+          <textarea
+            class="p-4"
+            name=""
+            id="text-editor"
+            cols="100"
+            rows="12"
+            placeholder="Write something...."
+          ></textarea>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
